@@ -1,9 +1,7 @@
 ---
-layout: archive
+layout: single
 title: "Fun Facts"
-permalink: /fun-fact/
-redirect_from:
-  - /fun-fact
+permalink: /fun-facts/
 ---
 
 I am a ![Ravenclaw](images/ravenclaw.png =x250).
