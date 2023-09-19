@@ -16,7 +16,6 @@ Thank you for visiting, and I hope you find my work as exciting as I do!
 
 Selected Publications
 ======
-Please visit the Publications tab for more details.
 
 Darwin: Flexible Learning-based CDN Caching [paper](https://dl.acm.org/doi/10.1145/3603269.3604863) [talk](https://www.youtube.com/watch?v=kpjjopd9vQQ&list=PLU4C2_kotFP2JAkoL6pcgbb52f6GIJJd7&index=55)
 ------
