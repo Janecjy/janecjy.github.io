@@ -14,7 +14,7 @@ Education
 
 Work experience
 ======
-* Student Researcher, 2023 - Present
+* Student Researcher, 2023 - 2024
   * Network Infrastructure Team, Google, Sunnyvale, CA
 
 * Graduate Technical Intern, 2022 - 2023
