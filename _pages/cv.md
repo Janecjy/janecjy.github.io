@@ -14,6 +14,9 @@ Education
 
 Work experience
 ======
+* Research Intern, 2025
+  * Network Research Group, Microsoft Research, Redmond, WA
+
 * Student Researcher, 2023 - 2024
   * Network Infrastructure Team, Google, Sunnyvale, CA
 
@@ -34,4 +37,6 @@ Teaching experience
   
 Service
 ======
+* LDOS Undergraduate Research Program Coordinator, 2025 - now, Austin, TX
+* LDOS Undergraduate Reading Group Coordinator, 2024 - 2025, Austin, TX
 * Participated in organizing [Sys/ML Workshop](https://sites.google.com/utexas.edu/mll-sysml/home), Austin, TX
