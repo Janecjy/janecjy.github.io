@@ -18,7 +18,7 @@ Thank you for visiting, and I hope you find my work as exciting as I do!
 Selected Publications
 ======
 
-**UNUM: A New Framework for Network Control** \[[paper](/files/unum.pdf)\]
+**UNUM: A New Framework for Network Control** \[[paper](https://www.usenix.org/system/files/nsdi26-chen-jiayi.pdf)\]
 
 <ins>Jiayi Chen</ins>, Nihal Sharma, Debajit Chakraborty, Saurabh Agarwal, Jeffrey Zhou, Aditya Akella, Sanjay Shakkottai\
 *NSDI '26*
