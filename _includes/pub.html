@@ -1,0 +1,15 @@
+{% assign p = include.pub %}
+<li class="pub{% if p.type == 'review' %} pub-review{% endif %}"{% if p.id %} id="{{ p.id }}"{% endif %}>
+  <div class="pub-venue"><span class="badge badge-{{ p.type }}">{{ p.venue }}</span></div>
+  <div class="pub-body">
+    <div class="pub-title">{{ p.title }}</div>
+    <div class="pub-authors">{{ p.authors | replace: "Jiayi Chen", "<span class='me'>Jiayi Chen</span>" }}</div>
+    {% if p.note %}<div class="pub-meta">{{ p.note }}</div>{% endif %}
+    {% if include.summary and p.summary %}<p class="pub-summary">{{ p.summary }}</p>{% endif %}
+    {% if p.links %}
+    <div class="pub-links">
+      {% for l in p.links %}<a class="pill" href="{% if l.url contains '://' %}{{ l.url }}{% else %}{{ l.url | relative_url }}{% endif %}">{{ l.name }}</a>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</li>

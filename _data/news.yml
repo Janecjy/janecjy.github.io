@@ -1,0 +1,11 @@
+# Most recent first. "text" accepts inline HTML; use single quotes inside attributes.
+- date: "Oct. 2026"
+  text: "I am on the <strong>2026&ndash;27 academic job market</strong>, seeking tenure-track faculty positions in computer systems and networking."
+- date: "Sep. 2026"
+  text: "Our paper <a href='/publications/#batching'><em>Online Batching with Lookahead: Adversarial Limits and Stochastic Gains</em></a> is accepted to <strong>SIGMETRICS 2027</strong>."
+- date: "Sep. 2026"
+  text: "I am hosting the <strong>LDOS Undergraduate Research</strong> information session, introducing LDOS research and opportunities for undergraduates. If you are interested, please <a href='https://docs.google.com/forms/d/e/1FAIpQLScbgc0hDE9eK6NIZog1wttyH8OdkUXp41o61OmI0Vz-2gsf-w/viewform'>apply here</a>."
+- date: "Jul. 2026"
+  text: "My amazing undergraduate mentees Justin Chang and Angela Zhang are presenting their work on decentralized edge network scheduling at <strong>DEMO workshop at ICML 2026</strong>."
+- date: "May 2026"
+  text: "I am presenting <a href='/publications/#unum'><strong>UNUM</strong></a> at <strong>NSDI 2026</strong>. Please check <a href='https://www.usenix.org/conference/nsdi26/presentation/chen-jiayi'>our paper</a> for more information."

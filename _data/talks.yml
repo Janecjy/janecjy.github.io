@@ -1,0 +1,14 @@
+- title: "ML for Systems in the Real World: Challenges Beyond Training the Models"
+  venues:
+    - { date: "May 2026", where: "University of Washington, SyFI Talk" }
+    - { date: "Mar 2026", where: "University of Maryland, Advanced Topics in Cloud Networking and Computing Seminar" }
+    - { date: "Mar 2026", where: "University of Wisconsin–Madison, MadSystems Seminar" }
+    - { date: "Mar 2026", where: "University of Illinois Urbana-Champaign, Systems Research Seminar" }
+    - { date: "Feb 2026", where: "Princeton University, Systems Seminar" }
+    - { date: "Nov 2025", where: "Cornell University, Systems Lunch" }
+- title: "UNUM: A New Framework for Network Control"
+  venues:
+    - { date: "Nov 2025", where: "LDOS Symposium" }
+- title: "Darwin: Flexible Learning-based CDN Caching"
+  venues:
+    - { date: "Aug 2025", where: "Microsoft Research, Networking Research Group" }

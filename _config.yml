@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jiayi (Jane) Chen"
+title                    : "Jiayi Jane Chen"
 title_separator          : "-"
-name                     : &name "Jiayi (Jane) Chen"
-description              : &description "CS PhD Student at UT Austin"
+name                     : &name "Jiayi Jane Chen"
+description              : &description "Jiayi Jane Chen, Ph.D. candidate in Computer Science at UT Austin, working on AI-driven networked and operating systems."
 url                      : https://janecjy.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "janecjy/janecjy.github.io"
@@ -80,9 +80,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jiayi (Jane) Chen"
+  name             : "Jiayi Jane Chen"
   avatar           : "profile.png"
-  bio              : "PhD Student at UT Austin"
+  bio              : "Ph.D. Candidate at UT Austin"
   location         : "Austin, TX"
   employer         :
   pubmed           : 
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/jiayi-jane-chen-02a063257/"
   orcid            : "https://orcid.org/0009-0008-7458-9619"
   pinterest        :
   soundcloud       :
@@ -146,6 +146,28 @@ exclude:
   - package.json
   - tmp
   - vendor
+  # Template sample content not used by the redesigned site
+  - CHANGELOG.md
+  - CONTRIBUTING.md
+  - README.md
+  - markdown_generator
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - _posts
+  - _drafts
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/portfolio.html
+  - _pages/sitemap.md
+  - _pages/tag-archive.html
+  - _pages/talkmap.html
+  - _pages/terms.md
+  - _pages/year-archive.html
 keep_files:
   - .git
   - .svn
@@ -176,16 +198,16 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: false
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
@@ -207,8 +229,7 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: single
-      author_profile: true
+      layout: academic
   # _teaching
   - scope:
       path: ""

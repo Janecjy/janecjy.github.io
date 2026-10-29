@@ -25,3 +25,11 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'hawkins'
 end
+
+gem "webrick", "~> 1.9"
+
+# Needed for local preview on Ruby 3.4+, which no longer bundles these libraries
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+gem "logger"

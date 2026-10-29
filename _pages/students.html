@@ -1,0 +1,17 @@
+---
+layout: academic
+title: "Students"
+permalink: /students/
+heading: "Students"
+description: "Students mentored by Jiayi Jane Chen."
+redirect_from:
+  - /teaching/
+  - /mentoring/
+---
+<p>I have been fortunate to mentor these students.</p>
+{% for g in site.data.mentees %}
+<h3>{{ g.group }}</h3>
+<ul class="student-list">
+{% for m in g.people %}<li>{% if m.url and m.url != "" %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}{% if m.note %} ({{ m.note }}){% endif %}{% if m.now %} &rarr; {{ m.now }}{% endif %}</li>
+{% endfor %}</ul>
+{% endfor %}

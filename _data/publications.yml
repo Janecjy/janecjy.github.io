@@ -1,0 +1,107 @@
+# Publications. "me" is wrapped automatically; use "Jiayi Chen" in author strings.
+# Fields: title, authors, venue (short badge), venue_full, year, type (conference|workshop|review|preprint),
+# selected (true shows on the home page), award, note, links (list of {name, url}), summary (shown on home page)
+
+- title: "Online Batching with Lookahead: Adversarial Limits and Stochastic Gains"
+  id: batching
+  authors: "Dimitrios Christou, Jiayi Chen, Nihal Sharma, Aditya Akella, Shuchi Chawla, Sanjay Shakkottai"
+  venue: "SIGMETRICS '27"
+  venue_full: "ACM SIGMETRICS 2027"
+  year: 2027
+  type: conference
+  note: "To appear"
+  selected: true
+  summary: "Characterizes when finite lookahead brings online batching close to the offline optimum: inherent limits under adversarial arrivals, but an optimality gap that shrinks exponentially with the lookahead window under Poisson arrivals."
+
+- title: "UNUM: A New Framework for Network Control"
+  id: unum
+  authors: "Jiayi Chen, Nihal Sharma, Debajit Chakraborty, Saurabh Agarwal, Jeffrey Zhou, Aditya Akella, Sanjay Shakkottai"
+  venue: "NSDI '26"
+  venue_full: "23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI 2026)"
+  year: 2026
+  type: conference
+  selected: true
+  links:
+    - { name: "Paper", url: "/files/unum.pdf" }
+    - { name: "Talk", url: "https://www.usenix.org/conference/nsdi26/presentation/chen-jiayi" }
+    - { name: "Code", url: "https://github.com/ldos-project/UNUM" }
+  summary: "Guided by the separation principle in control theory, UNUM exposes state estimation as a shared service: a learned network-state embedding that many controllers reuse. Improves congestion control and adaptive bitrate rewards by 13.6% and 45.5% on real-world traces."
+
+- title: "From Offline Global Information to Online Decentralized Policies in Edge Network Scheduling"
+  authors: "Justin Chang, Angela Zhang, Jiayi Chen, Aditya Akella"
+  venue: "DEMO @ ICML '26"
+  venue_full: "Demo at ICML 2026"
+  year: 2026
+  type: workshop
+
+- title: "A Joint Learning Approach to Hardware Caching and Prefetching"
+  authors: "Samuel Yuan, Divyanshu Saxena, Jiayi Chen, Nihal Sharma, Aditya Akella"
+  venue: "MLSys @ NeurIPS '25"
+  venue_full: "Workshop on ML for Systems at NeurIPS 2025"
+  year: 2025
+  type: workshop
+  links:
+    - { name: "Paper", url: "https://openreview.net/forum?id=1tpq5TFopY" }
+
+- title: "How I Learned to Stop Worrying and Love Learned OS Policies"
+  id: guardrails
+  authors: "Divyanshu Saxena*, Jiayi Chen*, Sujay Yadalam, Yeonju Ro, Rohit Dwivedula, Eric H. Campbell, Aditya Akella, Christopher J. Rossbach, Michael Swift"
+  venue: "HotOS '25"
+  venue_full: "Workshop on Hot Topics in Operating Systems (HotOS 2025)"
+  year: 2025
+  type: conference
+  note: "* Equal contribution"
+  selected: true
+  links:
+    - { name: "Paper", url: "https://dl.acm.org/doi/10.1145/3713082.3730384" }
+  summary: "Introduces Guardrails, a declarative abstraction that lets kernel developers specify system properties and corrective actions, compiled into in-kernel monitors that keep learned OS policies safe."
+
+- title: "Darwin: Flexible Learning-based CDN Caching"
+  id: darwin
+  authors: "Jiayi Chen, Nihal Sharma, Tarannum Khan, Shu Liu, Brian Chang, Aditya Akella, Sanjay Shakkottai, Ramesh K. Sitaraman"
+  venue: "SIGCOMM '23"
+  venue_full: "ACM SIGCOMM 2023"
+  year: 2023
+  type: conference
+  selected: true
+  links:
+    - { name: "Paper", url: "https://dl.acm.org/doi/10.1145/3603269.3604863" }
+    - { name: "Talk", url: "https://www.youtube.com/watch?v=qVsUF5SglpU" }
+    - { name: "Code", url: "https://github.com/Janecjy/Darwin" }
+  summary: "Combines the adaptability of learning with the efficiency of heuristics: cross-expert predictors let observations of one deployed policy evaluate many alternatives, guiding a bandit with provable exploration cost. Up to 1.71x hit-rate improvement on Akamai production traces."
+
+- title: "On a Foundation Model for Operating Systems"
+  authors: "Divyanshu Saxena, Nihal Sharma, Donghyun Kim, Rohit Dwivedula, Jiayi Chen, Chenxi Yang, Sriram Ravula, Zichao Hu, Aditya Akella, Sebastian Angel, Joydeep Biswas, Swarat Chaudhuri, Isil Dillig, Alex Dimakis, P. Brighten Godfrey, Daehyeok Kim, Christopher J. Rossbach, Gang Wang"
+  venue: "MLSys @ NeurIPS '23"
+  venue_full: "Workshop on ML for Systems at NeurIPS 2023"
+  year: 2023
+  type: workshop
+  links:
+    - { name: "Paper", url: "https://openreview.net/pdf?id=jHjfHmxLiX" }
+
+# Hidden until public (under review):
+# - title: "TARDIS: Online Event Relationship Embeddings for Systems Control"
+#   authors: "Jiayi Chen, Aryan Khatri, Dimitrios Christou, Ayaan Dhuka, Apia Okorafor, Haoyu Li, Nihal Sharma, Saarth Deshpande, Venkat Arun, Aditya Akella, Sanjay Shakkottai, Shuchi Chawla"
+#   venue: "Under review"
+#   type: review
+
+# - title: "Towards Application-Guided Scheduling"
+#   authors: "Haoyu Li, Jiayi Chen, Venkat Arun, Aditya Akella"
+#   venue: "Under review"
+#   type: review
+
+- title: "Accelerating Distributed Deep Learning using Lossless Homomorphic Compression"
+  authors: "Haoyu Li, Yuchen Xu, Jiayi Chen, Rohit Dwivedula, Wenfei Wu, Keqiang He, Aditya Akella, Daehyeok Kim"
+  venue: "arXiv '24"
+  year: 2024
+  type: preprint
+  links:
+    - { name: "arXiv", url: "https://arxiv.org/abs/2402.07529" }
+
+- title: "SFC: Near-Source Congestion Signaling and Flow Control"
+  authors: "Yanfang Le, Jeongkeun Lee, Jeremias Blendin, Jiayi Chen, Georgios Nikolaidis, Rong Pan, Robert Soule, Aditya Akella, Pedro Yebenes Segura, Arjun Singhvi, Yuliang Li, Qingkai Meng, Changhoon Kim, Serhat Arslan"
+  venue: "arXiv '23"
+  year: 2023
+  type: preprint
+  links:
+    - { name: "arXiv", url: "https://arxiv.org/abs/2305.00538" }

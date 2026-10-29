@@ -1,0 +1,31 @@
+# Students page. Each person: name, url (personal page, optional), note (shown in parentheses), now (current position).
+# - group: "Ph.D. students"
+#   people:
+#     - { name: "Haoyu Li", url: "https://lihy0529.github.io/" }
+#     - { name: "Rishika Varma K", url: "" }
+- group: "Current students"
+  people:
+    - { name: "Amruta Soma", url: "https://www.linkedin.com/in/amrutasoma/" }
+    - { name: "Angela Zhang", url: "https://www.linkedin.com/in/angelawzhang05/" }
+    - { name: "Apia Okorafor", url: "https://www.linkedin.com/in/apiaokorafor/" }
+    - { name: "Avaneesh Ramesh", url: "https://www.linkedin.com/in/av-ram/" }
+    - { name: "Justin Chang", url: "https://www.linkedin.com/in/justinchang12/" }
+    - { name: "Kai Hong", url: "https://www.linkedin.com/in/kai-hongg/" }
+    - { name: "Kyler Larsen", url: "https://www.linkedin.com/in/kylerlarsen/" }
+    - { name: "Lucas Helms", url: "https://www.linkedin.com/in/lucas-helms/" }
+    - { name: "Matthew Zhao", url: "https://www.linkedin.com/in/mzhao18/" }
+    - { name: "Rohit Pillutla", url: "https://www.linkedin.com/in/rohitpillutla/" }
+    - { name: "Saksham Agarwal", url: "https://www.linkedin.com/in/saksham-agarwal314/" }
+    - { name: "Sanika Misra", url: "https://www.linkedin.com/in/sanikamisra/" }
+    - { name: "Vaughn Holmes", url: "https://www.linkedin.com/in/vaughn-holmes-63028b370/" }
+    - { name: "Vedant Athale", url: "https://www.linkedin.com/in/vedantath/" }
+    - { name: "Yoon Jang", url: "https://www.linkedin.com/in/yoon-jang-61641211a/" }
+- group: "Previous students"
+  people:
+    - { name: "Ayaan Dhuka", url: "https://www.linkedin.com/in/ayaan-dhuka/", note: "Undergraduate student from UT Austin" }
+    - { name: "Jeffrey Zhou", url: "https://www.linkedin.com/in/jeffreyz1024/", note: "Undergraduate student from UT Austin" }
+    - { name: "Debajit Chakraborty", url: "https://www.debajitchakraborty.com/", note: "M.S. from UT Austin", now: "Machine Learning Engineer at Glean" }
+    - { name: "Samuel Yuan", url: "https://samuelyuan.com/", note: "B.S. from UT Austin", now: "Member of Technical Staff at OpenAI" }
+    - { name: "Aryan Khatri", url: "https://aryankhatri.com/", note: "B.S. from UT Austin, <a href='https://cns.utexas.edu/news/accolades/college-natural-sciences-celebrates-2026-deans-honored-graduates'>CNS Dean's Honored Graduate</a>", now: "Software Engineer at Jane Street" }
+    - { name: "Parth Shroff", url: "https://parthshroff.github.io/", note: "B.S. from UT Austin", now: "M.S. student at Stanford" }
+    - { name: "Shu (Lynn) Liu", url: "https://shulynnliu.com/", note: "B.S. from UW–Madison", now: "Ph.D. student at UC Berkeley" }   

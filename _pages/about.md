@@ -1,44 +1,61 @@
 ---
+layout: academic
 permalink: /
-title: "About me"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
+title: "Jiayi Jane Chen"
+description: "Jiayi Jane Chen is a Ph.D. candidate in Computer Science at UT Austin who builds system abstractions and frameworks that use AI to efficiently approximate optimal behavior in real-world networked systems and operating systems."
+redirect_from:
+  - /research/
   - /about/
   - /about.html
 ---
 
-I am a fifth-year Ph.D. student in Computer Science at The University of Texas at Austin, where I am co-advised by Prof. [Aditya Akella](https://www.cs.utexas.edu/~akella/) and Prof. [Sanjay Shakkottai](https://sites.google.com/view/sanjay-shakkottai/). Prior to that, I earned my bachelor degree in Electrical and Computer Engineering from Shanghai Jiao Tong University.
+<section class="bio">
+<p>I am a final-year Ph.D. candidate in Computer Science at The University of Texas at Austin, advised by <a href="https://www.cs.utexas.edu/~akella/">Aditya Akella</a> and <a href="https://sites.google.com/view/sanjay-shakkottai/">Sanjay Shakkottai</a>. I build <strong>system abstractions, frameworks, and generalizable AI components, grounded in theoretical analysis</strong>, that let real-world systems efficiently approximate optimal behavior as workloads, environments, and objectives change.</p>
+<p>My work spans networking, operating systems, and machine learning. I was part of the founding proposal team for the <a href="https://ldos.utexas.edu">NSF Expedition on Learning-Directed Operating Systems (LDOS)</a>, where I now lead the undergraduate research program. Before UT, I received my B.S. in Electrical and Computer Engineering from Shanghai Jiao Tong University. I have also spent time at Microsoft Research, Google, and Intel.</p>
+</section>
 
-My research lies at the intersection of machine learning, networks, and systems, with a focus on applying learning-based techniques to improve the performance of networked systems. Rather than applying machine learning as a standalone optimization tool, my works are **structuring how AI can be used within systems** by designing abstractions, frameworks, and reusable components that enable learning-based techniques to be systematically integrated into system design and operation.
-I am proud to be part of the [Learning-Directed Operating System (LDOS)](https://ldos.utexas.edu) expedition.
+<div class="callout"><strong>I am on the 2026&ndash;27 academic job market</strong> for tenure-track faculty positions in computer systems and networking. My application materials: <a href="{{ '/files/Jiayi_Chen_CV.pdf' | relative_url }}">CV</a> &middot; <a href="{{ '/files/Jiayi_Chen_Research_Statement.pdf' | relative_url }}">Research Statement</a> &middot; <a href="{{ '/files/Jiayi_Chen_Teaching_Statement.pdf' | relative_url }}">Teaching Statement</a></div>
 
-Thank you for visiting, and I hope you find my work as exciting as I do!
+<h2>Research</h2>
+<p class="thesis">Latent information should be a first-class object in system design.</p>
+<p>Today's systems expose isolated measurements, delayed feedback, and the effects of only the deployed policy. The information that matters most for good decisions stays hidden. My research recovers this latent structure with lightweight AI, exposes it through reusable system interfaces, and uses theory to characterize what it can and cannot buy.</p>
 
-Selected Publications
-======
+<div class="grid-3">
+<div class="card">
+<div class="card-num">Thrust 1</div>
+<h3>Representing latent workload and system dynamics</h3>
+<p>Build compact learned representations that recover workload and system state that raw measurements hide.</p>
+<div class="tags"><a class="tag" href="{{ '/publications/#unum' | relative_url }}">UNUM</a><span class="tag tag-more">More to come</span></div>
+</div>
+<div class="card">
+<div class="card-num">Thrust 2</div>
+<h3>Guiding policy search with system knowledge</h3>
+<p>Exploit system knowledge to guide near-optimal policy search with smaller search space.</p>
+<div class="tags"><a class="tag" href="{{ '/publications/#darwin' | relative_url }}">Darwin</a><span class="tag tag-more">More to come</span></div>
+</div>
+<div class="card">
+<div class="card-num">Thrust 3</div>
+<h3>Characterizing limits and safeguarding</h3>
+<p>Theory for when extra information helps, and runtime guardrails that keep learned policies safe.</p>
+<div class="tags"><a class="tag" href="{{ '/publications/#batching' | relative_url }}">Online Batching</a><a class="tag" href="{{ '/publications/#guardrails' | relative_url }}">Guardrails</a></div>
+</div>
+</div>
+<p style="margin-top:14px"><a class="section-link" href="{{ '/files/Jiayi_Chen_Research_Statement.pdf' | relative_url }}">Read my research statement &rarr;</a></p>
 
-**UNUM: A New Framework for Network Control** \[[paper](/files/unum.pdf)\]
+<h2>Recent News</h2>
+<ul class="news">
+{% for n in site.data.news limit: 6 %}<li><span class="date">{{ n.date }}</span><span>{{ n.text }}</span></li>
+{% endfor %}</ul>
+{% if site.data.news.size > 6 %}
+<details class="more"><summary>Show earlier news</summary>
+<ul class="news">
+{% for n in site.data.news offset: 6 %}<li><span class="date">{{ n.date }}</span><span>{{ n.text }}</span></li>
+{% endfor %}</ul>
+</details>
+{% endif %}
 
-<ins>Jiayi Chen</ins>, Nihal Sharma, Debajit Chakraborty, Saurabh Agarwal, Jeffrey Zhou, Aditya Akella, Sanjay Shakkottai\
-*NSDI '26*
-
-A system's ability to understand its current operating context is crucial for making good decisions. Yet most network controllers today rely on hand-crafted features that provide only a narrow view of the system and are often delayed by at least one RTT. Inspired by the separation principle in control theory, we argue that state estimation should be treated as a standalone, first-class entity. Unum provides a unified network-state embedder that learns a rich latent representation of system conditions. This shared representation can be used by many different controllers, decoupling the challenge of understanding the system from the task of making decisions. By offering a common and more expressive view of the network, UNUM enables controllers to make better and more coordinated decisions.
-
----
-
-**Darwin: Flexible Learning-based CDN Caching** \[[paper](https://dl.acm.org/doi/10.1145/3603269.3604863)\] \[[talk](https://www.youtube.com/watch?v=kpjjopd9vQQ&list=PLU4C2_kotFP2JAkoL6pcgbb52f6GIJJd7&index=55)\]
-
-<ins>Jiayi Chen</ins>, Nihal Sharma, Tarannum Khan, Shu Liu, Brian Chang, Aditya Akella, Sanjay Shakkottai, Ramesh K Sitaraman\
-*ACM SIGCOMM '23*
-
-Most production CDNs apply static, hand-tuned caching policy parameters at cache servers, such as admission frequency or size thresholds for the Hot Object Caches (HOC) of their system. However, these static policies fall short when a server is faced with unpredictable traffic pattern changes, even when policies employ multiple control parameters/knobs. Recent approaches have proposed learning-based solutions to dynamically adjust policy parameters, but they are limited in action space, caching objectives, or impose high overhead. We propose Darwin, a CDN cache management system that is robust to traffic pattern changes and can flexibly optimize different caching objectives with unrestricted action spaces. Darwin employs a three-stage pipeline involving traffic pattern feature collection, unsupervised clustering for classification, and neural bandit expert selection to choose the optimal caching policy. Through extensive simulations, experiments using an Apache Traffic Server (ATS)-based prototype, and theoretical analysis, we show that Darwin achieves significant performance gain w.r.t. different objectives such as maximizing object hit rates and minimizing disk writes, while simultaneously adapting to traffic pattern shifts. Darwin imposes negligible overhead and achieves high throughput compared to the state-of-the-art.
-
----
-
-**How I learned to stop worrying and love learned OS policies** \[[paper](https://dl.acm.org/doi/abs/10.1145/3713082.3730384)\]
-
-Divyanshu Saxena\*, <ins>Jiayi Chen\*</ins>, Sujay Yadalam, Yeonju Ro, Rohit Dwivedula, Eric H Campbell, Aditya Akella, Christopher J Rossbach, Michael Swift\
-*HotOS '25*
-
-While machine learning has been adopted across various fields, its ability to outperform traditional heuristics in operating systems is often met with justified skepticism. Concerns about unsafe decisions, opaque debugging processes, and the challenges of integrating ML into the kernel---given its stringent latency constraints and inherent complexity---make practitioners understandably cautious. This paper introduces Guardrails for the OS, a framework that allows kernel developers to declaratively specify system-level properties and define corrective actions to address property violations. The framework facilitates the compilation of these guardrails into monitors capable of running within the kernel. In this work, we establish the foundation for Guardrails, detailing its core abstractions, examining the problem space, and exploring potential solutions.
+<h2>Selected Publications</h2>
+<ul class="pubs">
+{% for p in site.data.publications %}{% if p.selected %}{% include pub.html pub=p %}{% endif %}{% endfor %}
+</ul>
+<p style="margin-top:14px"><a class="section-link" href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></p>
