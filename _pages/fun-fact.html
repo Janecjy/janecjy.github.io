@@ -1,0 +1,43 @@
+---
+layout: academic
+title: "Fun Facts"
+permalink: /fun-facts/
+---
+
+<p class="fun-intro">I love good books, music, films and theatres.</p>
+
+{% assign photos = "matilda|I worked on set for Matilda the Musical;run|I completed Austin Half Marathon;wff_volunteer|I volunteered at the Wisconsin Film Festival;wc|and at the 2026 World Cup;ynwa|YNWA!" | split: ";" %}
+<div class="photo-walk">
+  <div class="walk-track" tabindex="0" aria-label="Photo walk">
+  {% for ph in photos %}{% assign parts = ph | split: "|" %}
+    <figure class="walk-item">
+      <img src="{{ '/images/fun/' | append: parts[0] | append: '.jpg' | relative_url }}" alt="{{ parts[1] }}" loading="lazy">
+      <figcaption>{{ parts[1] }}</figcaption>
+    </figure>
+  {% endfor %}
+  </div>
+  <button class="walk-btn walk-prev" type="button" aria-label="Previous photo">&lsaquo;</button>
+  <button class="walk-btn walk-next" type="button" aria-label="Next photo">&rsaquo;</button>
+</div>
+
+<script>
+(function () {
+  var track = document.querySelector('.walk-track');
+  if (!track) return;
+  function step(dir) {
+    var items = track.querySelectorAll('.walk-item');
+    var x = track.scrollLeft, max = track.scrollWidth - track.clientWidth, target = null;
+    if (dir > 0 && x >= max - 4) { track.scrollTo({ left: 0, behavior: 'smooth' }); return; }
+    if (dir < 0 && x <= 4) { track.scrollTo({ left: max, behavior: 'smooth' }); return; }
+    for (var i = 0; i < items.length; i++) {
+      var left = items[i].offsetLeft;
+      if (dir > 0 && left > x + 4) { target = left; break; }
+      if (dir < 0 && left < x - 4) target = left;
+    }
+    if (target === null) target = dir > 0 ? max : 0;
+    track.scrollTo({ left: target, behavior: 'smooth' });
+  }
+  document.querySelector('.walk-prev').addEventListener('click', function () { step(-1); });
+  document.querySelector('.walk-next').addEventListener('click', function () { step(1); });
+})();
+</script>
