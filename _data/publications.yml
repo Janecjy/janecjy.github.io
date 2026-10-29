@@ -22,7 +22,7 @@
   type: conference
   selected: true
   links:
-    - { name: "Paper", url: "/files/unum.pdf" }
+    - { name: "Paper", url: "https://www.usenix.org/system/files/nsdi26-chen-jiayi.pdf" }
     - { name: "Talk", url: "https://www.usenix.org/conference/nsdi26/presentation/chen-jiayi" }
     - { name: "Code", url: "https://github.com/ldos-project/UNUM" }
   summary: "Guided by the separation principle in control theory, UNUM exposes state estimation as a shared service: a learned network-state embedding that many controllers reuse. Improves congestion control and adaptive bitrate rewards by 13.6% and 45.5% on real-world traces."
