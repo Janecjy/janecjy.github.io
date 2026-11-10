@@ -49,7 +49,7 @@
   venue: "HotOS '25"
   venue_full: "Workshop on Hot Topics in Operating Systems (HotOS 2025)"
   year: 2025
-  type: conference
+  type: workshop
   note: "* Equal contribution"
   selected: true
   links:
